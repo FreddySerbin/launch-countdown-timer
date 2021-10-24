@@ -1,0 +1,25 @@
+body {
+    background-color: #000;
+
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 1440px;
+    height: 800px;
+    background-color: hsl(234, 17%, 12%);
+    background-image: url("../images/pattern-hills.svg"), url("../images/bg-stars.svg");;
+    background-size: 100%, 100%;
+    background-position: bottom, 0 3px;                         /*pattern-hills.svg position bottom, bg-stars.svg position 0 sur x et 3px sur y*/
+    background-repeat: no-repeat;
+}
+
+.attribution{
+    display: none;
+}
