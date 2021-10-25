@@ -1,6 +1,10 @@
+@font-face {
+    font-family: "RedHatDisplay";
+    src: url("../fonts/RedHatDisplay-Black.ttf") format("truetype");
+}
+
 body {
     background-color: #000;
-
 }
 
 main{
@@ -14,10 +18,75 @@ main{
     width: 1440px;
     height: 800px;
     background-color: hsl(234, 17%, 12%);
-    background-image: url("../images/pattern-hills.svg"), url("../images/bg-stars.svg");;
+    background-image: url("../images/pattern-hills.svg"), url("../images/bg-stars.svg");
     background-size: 100%, 100%;
     background-position: bottom, 0 3px;                         /*pattern-hills.svg position bottom, bg-stars.svg position 0 sur x et 3px sur y*/
     background-repeat: no-repeat;
+}
+
+h1{
+    color: hsl(0, 0%, 100%);
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    margin-top: 140px;
+    font-family: "RedHatDisplay";
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.timer{
+    width: 700px;
+    height: 150px;
+    margin: 100px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bloc{
+
+}
+
+.figure{
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.top{
+    display: inline-block;
+    background-color: hsl(235, 16%, 14%);
+    width: 150px;
+    height: 70px;
+    border-radius: 10px 10px 0 0;
+}
+
+.top-back{
+    display: none;
+}
+
+.bottom{
+    display: inline-block;
+    background-color: hsl(236, 21%, 26%);
+    width: 150px;
+    height: 70px;
+    border-radius: 0 0 10px 10px ;
+}
+
+.bottom-back{
+    display: none;
+}
+
+.title{
+    display: inline-block;
+    width: 150px;
+    padding: 20px 0;
+    color:hsl(237, 18%, 59%);
+    font-size: 14px;
+    font-family: "RedHatDisplay";
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-align: center;
 }
 
 .attribution{
